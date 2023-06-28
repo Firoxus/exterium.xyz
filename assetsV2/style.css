@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+:root {
+    --background: #0a0b0c;
+    --secondary-background: #0f1013;
+    --main-color: rgb(120, 29, 194);
+    --main-hover-color: rgb(120, 29, 194);
+}
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+  transition: opacity 4s ease-out; 
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  margin: 0;
+  background-color: var(--background);
+}
+
+.bg {
+    background-color: var(--background);
+}
+.dg {
+    background-color: var(--secondary-background);
+}
+.maincol-bg {
+    background-color: var(--main-color);
+}
+.maincol-bg-hover {
+    background-color: var(--main-hover-color);
+}
+.maincol-txt {
+    color: var(--main-color);
+}
+.maincol-txt-hover {
+    color: var(--main-hover-color);
+}
+.fnt {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.cstWH {
+    height: 6rem;
+    width: 11rem;
+}
+.content {
+    max-width: 70rem;
+    margin-inline: auto;
+}
+.cstFNTSZ {
+    font-size: 0.6rem;
+}
+.cstShdw {
+    box-shadow: 0px 3px 0px 0px black;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    transition: 0.2s linear;
+}
+
+.cstShdw:focus {
+    outline: none; 
+}
+
+.cstShdw:hover {
+    box-shadow: 0px 3px 0px 0px var(--main-color);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+.cstHegt {
+    height: 7rem;
+}
+.cstHegt2 {
+    height: 14rem;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+.image-opacity {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.Active {
+    box-shadow: 0px 3px 0px 0px var(--main-color);
+}
+
+.Active:focus {
+    outline: none; 
+}
